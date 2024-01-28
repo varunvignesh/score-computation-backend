@@ -34,7 +34,7 @@ def hello_world():
 from app.api.account import route
 
 # Teardown database connection on app context teardown
-@app.teardown_appcontext
-def close_database_connection(exception=None):
-    if connection is not None:
-        connection.close()
+# @app.teardown_appcontext
+# def close_database_connection(exception=None):
+#     if connection is not None:
+#         connection.close()

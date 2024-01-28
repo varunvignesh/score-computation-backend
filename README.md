@@ -34,3 +34,38 @@
    ```
    python app.py
    ```
+
+## Endpoints
+
+**GET** **{base_url}/api/v1/accounts/<account_id>/products/<product_id>** - fetches the individual products by the account
+
+### sample response
+
+```
+{
+    "code": 200,
+    "data": {
+        "account_id": 1,
+        "product_id": 1,
+        "reference_product_id": "2800021730",
+        "stock": "In Stock"
+    },
+    "message": "Products fetched successfully",
+    "status": "SUCCESS"
+}
+```
+
+**GET** **{base_url}/api/v1/accounts/<account_id>/score** - fetches the score of an account
+
+### sample response
+
+```
+{
+    "code": 200,
+    "data": {
+        "score": 0.5
+    },
+    "message": "Account score fetched successfully",
+    "status": "SUCCESS"
+}
+```
