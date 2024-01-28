@@ -35,6 +35,20 @@
    python app.py
    ```
 
+## Docker setup
+
+1. Build the docker image
+
+```
+docker build -t score-computation-backend .
+```
+
+2. Run the docker container
+
+```
+docker run -p 8000:8000 score-computation-backend
+```
+
 ## Endpoints
 
 **GET** **{base_url}/api/v1/accounts/<account_id>/products/<product_id>** - fetches the individual products by the account
